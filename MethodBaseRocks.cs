@@ -357,7 +357,7 @@ class MethodBodyReader
                 instruction.Operand = module.ResolveString(raw_il.ReadInt32());
                 break;
             case OperandType.InlineTok:
-                instruction.Operand = module.ResolveMember(raw_il.ReadInt32(), type_arguments, method_arguments);
+                //instruction.Operand = module.ResolveMember(raw_il.ReadInt32(), type_arguments, method_arguments);
                 break;
             case OperandType.InlineType:
                 instruction.Operand = module.ResolveType(raw_il.ReadInt32(), type_arguments, method_arguments);
